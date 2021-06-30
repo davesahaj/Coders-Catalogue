@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coders Catalogue</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- JQuery -->
+    <script src="res/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="res/css/bootstrap.min.css" />
+    <script src="res/js/bootstrap.min.js"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="res/css/style.css" />
   </head>
   <body>
-    <!-- <button id="myBtn">Fetch</button> -->
-    <h2>Upcoming Contests</h2>
-    <div id="content"></div>
+    <main>
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-10"><a href="#contests">Contests</a></div>
+          <div class="col">
+            <a href="#settings"><i class="fa fa-cog" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
-  <script src="res/js/index.js"></script>
 </html>
