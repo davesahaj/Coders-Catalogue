@@ -16,7 +16,7 @@ Coders catalogue is a Web extension for competitive coders and programmers to ke
 - ##### in the backend directory of root, execute the following command:
 
 ```bash
- python manage.py runserver
+ nothing here so far
 ```
 
 ## Contributing
