@@ -1,0 +1,12 @@
+/* nothing here */
+main {
+  min-height: 500px;
+  min-width: 400px;
+  height: 500px;
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Coders Catalogue",
+  "version": "1.0",
+  "description": "A Browser extension for competitive coders and programmers to keep a track on upcoming contests on various coding platforms.",
+  "icons": {
+    "48": "res/icons/border-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": "res/icons/border-48.png",
+    "default_popup": "index.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "codersCatalogue@example.com"
+    }
+  }
+}
