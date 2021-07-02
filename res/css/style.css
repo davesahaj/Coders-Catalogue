@@ -10,3 +10,22 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+footer {
+  background-color: blueviolet;
+}
+
+#ContestList,
+#HomePage,
+#Settings {
+  background: #fff;
+  border: 0px;
+  border-radius: 8px;
+}
+
+#MainContent {
+  height: 100%;
+}
+.container-fluid {
+  height: 100%;
+}
