@@ -9,7 +9,7 @@ fetch(urlCF)
     for (let x in data) {
       let str = `${data[x].name}`;
       if (str.includes("Codeforces Round"))
-        content.innerHTML += `${data[x].name} <br>`
+        content.innerHTML += `${data[x].name} <br><br>`
     }
   })
   .catch((error) => document.write("Unable to fetch Codeforces Rounds!"));
@@ -23,7 +23,7 @@ fetch(urlCC)
     for (let x in data) {
       let str = `${data[x].name}`;
       if (str.includes("2021"))
-        content.innerHTML += `${data[x].name} <br>`
+        content.innerHTML += `${data[x].name} <br><br>`
     }
   })
   .catch((error) => document.write("Unable to fetch Codechef Contests!"));
