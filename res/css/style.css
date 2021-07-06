@@ -10,3 +10,8 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+#ContestList
+{
+  font-size: 20px;
+}
