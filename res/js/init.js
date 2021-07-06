@@ -1,5 +1,5 @@
-let homepage = document.getElementById("homepage");
-let settings = document.getElementById("settings");
+let homepage = document.getElementById("HomePage");
+let settings = document.getElementById("Settings");
 let contestlist = document.getElementById("ContestList");
 
 $(settings).hide();
