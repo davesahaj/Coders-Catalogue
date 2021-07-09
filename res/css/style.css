@@ -4,6 +4,8 @@ main {
   min-width: 400px;
   height: 500px;
   width: 400px;
+  max-height: 500px;
+  max-width: 400px;
 }
 
 a {
@@ -11,27 +13,7 @@ a {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 #ContestList
 {
-  font-size: 20px;
-=======
-footer {
-  background-color: blueviolet;
-}
-
-#ContestList,
-#HomePage,
-#Settings {
-  background: #fff;
-  border: 0px;
-  border-radius: 8px;
-}
-
-#MainContent {
-  height: 100%;
-}
-.container-fluid {
-  height: 100%;
->>>>>>> b3b9500b5904bedfd5fbf3e761b26829d614878d
+  font-size: 15px;
 }

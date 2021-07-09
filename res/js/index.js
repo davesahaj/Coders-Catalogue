@@ -23,7 +23,7 @@ fetch(urlCC)
     for (let x in data) {
       let str = `${data[x].name}`
       if (str.includes("2021"))
-        content.innerHTML += `${data[x].name} <br><br>`
+        content.innerHTML += `${data[x].name} <br>`
     }
   })
   .catch((error) => document.write("Unable to fetch Codechef Contests!"));
