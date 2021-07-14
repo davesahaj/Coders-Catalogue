@@ -13,7 +13,7 @@ Coders catalogue is a Web extension for competitive coders and programmers to ke
 
 ## Usage
 
-- ##### in the backend directory of root, execute the following command:
+- ##### execute the following commands:
 
 ```bash
  nothing here so far
