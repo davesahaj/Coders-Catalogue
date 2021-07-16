@@ -15,7 +15,7 @@ function populate(N, D, T, L) {
               </div>
             </div>
             <div class="col-2">
-              <div class="col overflow-hidden"><a href="${L}">Link</a></div>
+              <div class="col overflow-hidden"><a href="${L}" target="_blank">Link</a></div>
               <div class="col overflow-hidden">${R}</div>
             </div>
           </div>`;
