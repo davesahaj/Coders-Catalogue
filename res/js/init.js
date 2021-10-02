@@ -1,6 +1,5 @@
 function updateData() {
   fetchData();
-  
 }
 
 function overlay(v) {
