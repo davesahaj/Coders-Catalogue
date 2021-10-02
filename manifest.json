@@ -6,6 +6,9 @@
   "icons": {
     "48": "res/icons/border-48.png"
   },
+  "permissions": [
+    "storage"
+  ],
   "browser_action": {
     "default_icon": "res/icons/border-48.png",
     "default_popup": "index.html"
