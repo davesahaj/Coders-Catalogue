@@ -6,7 +6,7 @@ let FOOTER = document.getElementById("footer");
 let OVERLAYSPINNER = document.getElementById("overlayspinner");
 let TOGGLE = document.getElementById("toggle");
 
-let URLAPI = "https://kontests.net/api/v1/all";
+let URLAPI = "https://kontests.net/api/v1/leet_code";
 
 let HACKERRANK = "HackerRank";
 let TOPCODER = "TopCoder";
