@@ -9,7 +9,6 @@ function fetchData() {
       overlay(0);
     } else {
       overlay(1);
-      // let LEETCODEA = [];
       fetch(URLAPI)
         .then((response) => response.json())
         .then((data) => {
@@ -20,16 +19,13 @@ function fetchData() {
               T: data[x].duration,
               L: data[x].url,
             };
-            if(!!window.localStorage.getItem("LEETCODETESTKEY")) {
-              let temp = JSON.parse(window.localStorage.getItem("LEETCODETESTKEY"));
+            if(!!window.localStorage.getItem("ContestList")) {
+              let temp = JSON.parse(window.localStorage.getItem("ContestList"));
               temp.push(contestData);
-              window.localStorage.setItem("LEETCODETESTKEY",JSON.parse.stringify(temp));
-              console.log("HELLO2");
-
-            } else {
-              window.localStorage.setItem("LEETCODETESTKEY",JSON.stringify(contestData));
-              console.log("Hello");
+              window.localStorage.setItem("ContestList",JSON.stringify(temp));
             }
+            
+            //WORK FROM HERE
             // let { N, D, T, L } = JSON.parse(
             //   window.localStorage.getItem("LeetCode")
             // );
