@@ -1,7 +1,12 @@
 function populate(N, D, T, L) {
   let R = "Remind";
+<<<<<<< HEAD
   //   let I = `icons/${N}.png`;
   let I = "../icons/HACKERRANK.png";
+=======
+    // let I = `icons/${N}.png`;
+  let I = "icons/HACKERRANK.png";
+>>>>>>> 1486bb687e0bcefe9b70b79d4b192d58ad7d3fd4
 
   let siteinfo = `<div class="row m-1">
             <div class="col-2 overflow-hidden"><img src="${I}" width=64px height=64px></div>
@@ -21,4 +26,10 @@ function populate(N, D, T, L) {
           </div>`;
 
   CONTESTLIST.innerHTML += siteinfo;
+}
+
+function buttonCheck(N, D, T, L, S) {
+  if(S === 'CodeForces' && CFBUTTON != null) {
+    populate(N, D, T, L);
+  }
 }

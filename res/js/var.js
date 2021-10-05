@@ -5,6 +5,7 @@ let SETTINGS = document.getElementById("settings");
 let FOOTER = document.getElementById("footer");
 let OVERLAYSPINNER = document.getElementById("overlayspinner");
 let TOGGLE = document.getElementById("toggle");
+let CFBUTTON = document.getElementById("codeforcesBtn");
 
 let URLAPI = "https://kontests.net/api/v1/all";
 
@@ -17,3 +18,7 @@ let ATCODER = "AtCoder";
 let LEETCODE = "LeetCode";
 let KICKSTART = "KickStart";
 let TOPH = "Toph";
+
+let ALLCONTESTS = [];
+
+let CFSTORAGE = window.localStorage.getItem("CFBUTTON");
