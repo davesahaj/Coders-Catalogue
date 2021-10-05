@@ -1,7 +1,7 @@
 function populate(N, D, T, L) {
   let R = "Remind";
   //   let I = `icons/${N}.png`;
-  let I = "icons/border-48.png";
+  let I = "../icons/HACKERRANK.png";
 
   let siteinfo = `<div class="row m-1">
             <div class="col-2 overflow-hidden"><img src="${I}" width=64px height=64px></div>
