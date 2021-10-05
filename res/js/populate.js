@@ -22,3 +22,9 @@ function populate(N, D, T, L) {
 
   CONTESTLIST.innerHTML += siteinfo;
 }
+
+function buttonCheck(N, D, T, L, S) {
+  if(S === 'CodeForces' && CFBUTTON != null) {
+    populate(N, D, T, L);
+  }
+}

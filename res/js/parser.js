@@ -1,13 +1,18 @@
 function fetchData() {
   try {
-    let contestDataAvailable = !!window.localStorage.getItem("LeetCode");
-    if (contestDataAvailable) {
-      let { N, D, T, L } = JSON.parse(
-        window.localStorage.getItem("LeetCode")
-      );
-      populate(N, D, T, L);
+    let contestDataAvailable = JSON.parse(
+      window.localStorage.getItem("ContestList")
+    );
+    if (contestDataAvailable != null) {
+      for (let i = 0; i < contestDataAvailable.length; i++) {
+        let { N, D, T, L, S} = JSON.parse(
+          window.localStorage.getItem("ContestList")
+        )[i];
+        buttonCheck(N, D, T, L, S);
+      }
       overlay(0);
     } else {
+      window.localStorage.setItem("ContestList", JSON.stringify(ALLCONTESTS));
       overlay(1);
       fetch(URLAPI)
         .then((response) => response.json())
@@ -18,18 +23,13 @@ function fetchData() {
               D: data[x].start_time,
               T: data[x].duration,
               L: data[x].url,
+              S: data[x].site,
             };
-            if(!!window.localStorage.getItem("ContestList")) {
-              let temp = JSON.parse(window.localStorage.getItem("ContestList"));
-              temp.push(contestData);
-              window.localStorage.setItem("ContestList",JSON.stringify(temp));
-            }
-            
-            //WORK FROM HERE
-            // let { N, D, T, L } = JSON.parse(
-            //   window.localStorage.getItem("LeetCode")
-            // );
-            // populate(N, D, T, L);
+            let { N, D, T, L, S} = contestData;
+            buttonCheck(N, D, T, L, S);
+            let temp = JSON.parse(window.localStorage.getItem("ContestList"));
+            temp.push(contestData);
+            window.localStorage.setItem("ContestList", JSON.stringify(temp));
           }
           overlay(0);
         })

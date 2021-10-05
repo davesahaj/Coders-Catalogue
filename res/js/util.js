@@ -1,4 +1,3 @@
-//
 
 $(function () {
   $("#toggle").click(function (e) {
