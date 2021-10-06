@@ -6,6 +6,9 @@
   "icons": {
     "48": "res/icons/border-48.png"
   },
+    "web_accessible_resources": [
+    "icons/HACKERRANK.png"
+  ],
   "permissions": [
     "storage"
   ],
