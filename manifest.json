@@ -7,7 +7,7 @@
     "48": "res/icons/border-48.png"
   },
     "web_accessible_resources": [
-    "icons/HACKERRANK.png"
+    "res/icons/HACKERRANK.png"
   ],
   "permissions": [
     "storage"
