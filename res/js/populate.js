@@ -29,7 +29,7 @@ function populate(N, D, T, L) {
 }
 
 function buttonCheck(N, D, T, L, S) {
-  if(S === 'CodeForces' && CFBUTTON != null) {
+  if(S === 'CodeForces' && CFSTORAGE === "true") {
     populate(N, D, T, L);
   }
 }
