@@ -27,8 +27,23 @@ a {
   cursor: pointer;
 }
 
+.first-column {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.contest-logo {
+  padding-right: 5px;
+}
+
+.mid-column {
+  width: 80%;
+  max-width: 80%;
+  overflow: hidden;
+}
 .contest-heading {
   font-size: medium;
+  overflow: hidden;
 }
 
 .contest-duration,
