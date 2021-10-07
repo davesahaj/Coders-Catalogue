@@ -8,7 +8,7 @@
 *::-webkit-scrollbar {
   display: none;
 }
-/* 
+
 main {
   min-height: 500px;
   min-width: 400px;
@@ -16,7 +16,7 @@ main {
   width: 400px;
   max-height: 500px;
   max-width: 400px;
-} */
+}
 
 a {
   text-decoration: none;
