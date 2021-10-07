@@ -5,7 +5,7 @@ function fetchData() {
     );
     if (contestDataAvailable != null) {
       for (let i = 0; i < contestDataAvailable.length; i++) {
-        let { N, D, T, L, S} = JSON.parse(
+        let { N, D, T, L, S } = JSON.parse(
           window.localStorage.getItem("ContestList")
         )[i];
         buttonCheck(N, D, T, L, S);
@@ -25,7 +25,7 @@ function fetchData() {
               L: data[x].url,
               S: data[x].site,
             };
-            let { N, D, T, L, S} = contestData;
+            let { N, D, T, L, S } = contestData;
             buttonCheck(N, D, T, L, S);
             let temp = JSON.parse(window.localStorage.getItem("ContestList"));
             temp.push(contestData);
@@ -40,6 +40,5 @@ function fetchData() {
     }
   } catch (err) {
     overlay(0);
-    console.error(err.message);
   }
 }
