@@ -26,3 +26,27 @@ a {
 #toggle {
   cursor: pointer;
 }
+
+.first-column {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.contest-logo {
+  padding-right: 5px;
+}
+
+.mid-column {
+  width: 80%;
+  max-width: 80%;
+  overflow: hidden;
+}
+.contest-heading {
+  font-size: small;
+  overflow: hidden;
+}
+
+.contest-duration,
+.contest-datetime {
+  font-size: x-small;
+}

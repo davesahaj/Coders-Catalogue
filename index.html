@@ -31,19 +31,32 @@
     <main>
       <!-- container -->
       <div class="container-fluid user-select-none">
-        <!-- header -->
-        <div class="row mb-4 sticky-top bg-primary" id="header">
-          <div class="col-11 text-decoration-none fs-5">
-            <span class="text-white" id="headertext">Contests</span>
-          </div>
-          <div class="col-1">
-            <i id="toggle" class="text-white fa fa-cog" aria-hidden="true"></i>
+        <!-- Header -->
+        <div class="d-flex flex-column p-1 fixed-top bg-primary" id="header">
+          <div class="d-flex flex-row fs-6">
+            <span class="flex-grow-1 text-white" id="headertext"
+              >Coders Catalogue</span
+            >
+            <div class="px-2">
+              <i
+                id="refresh"
+                class="text-white fa fa-undo-alt"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div>
+              <i
+                id="toggle"
+                class="text-white fa fa-cog"
+                aria-hidden="true"
+              ></i>
+            </div>
           </div>
         </div>
         <!-- end header -->
 
         <!-- contest list -->
-        <div class="row" id="contestlist">
+        <div class="row my-5" id="contestlist">
           <!-- 
             I = WEBSITE ICON
             N = CONTEST NAME
@@ -53,70 +66,119 @@
             R = REMINDER
            -->
         </div>
+
         <!-- end contest list -->
 
         <!-- settings -->
-        <div class="row" id="settings">
+        <div class="row my-5" id="settings">
           <div class="row mb-3">
             <div class="col-10">Codeforces</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="codeforcesBtn" checked/>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="CodeForces"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">Codechef</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="codechefBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="CodeChef"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">HackerRank</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="hackerrankBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="HackerRank"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">HackerEarth</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="hackerearthBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="HackerEarth"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">LeetCode</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="leetcodeBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="LeetCode"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">TopCoder</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="topcoderBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="TopCoder"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">AtCoder</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="atcoderBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="AtCoder"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">KickStart</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="kickstartBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="Kick Start"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">TopH</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="tophBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="TopH"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
         </div>
         <!-- end settings -->
 
         <!-- footer -->
-        <div class="row" id="footer">
-          <div class="col bg-primary text-white fixed-bottom">footer</div>
+        <div class="d-flex flex-column bg-primary fixed-bottom">
+          <div class="text-white p-1">
+            <i class="fa fa-copyright fs-6" aria-hidden="true"></i>
+            <span class="fs-6">Unemployed Devs</span>
+          </div>
         </div>
         <!-- end footer -->
 
@@ -144,12 +206,12 @@
 
     <!-- custom scripts -->
     <script src="res/js/var.js"></script>
-    <script src="res/js/settings.js"></script>
     <script src="res/js/timedate.js"></script>
     <script src="res/js/util.js"></script>
+    <script src="res/js/refresh.js"></script>
     <script src="res/js/populate.js"></script>
     <script src="res/js/parser.js"></script>
     <script src="res/js/init.js"></script>
     <!-- <script src="res/js/update.js"></script> -->
-    </body>
+  </body>
 </html>

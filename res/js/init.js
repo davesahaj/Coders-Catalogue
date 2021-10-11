@@ -1,24 +1,29 @@
 function updateData() {
-  fetchData();
-}
+  setCheckBox();
 
-function overlay(v) {
-  if (v == 0) {
-    $(OVERLAYSPINNER).hide();
-    $(HEADER).show();
-    $(CONTESTLIST).show();
-    $(SETTINGS).hide();
-    $(FOOTER).show();
-  } else {
-    $(OVERLAYSPINNER).show();
-    $(HEADER).hide();
-    $(CONTESTLIST).hide();
-    $(SETTINGS).hide();
-    $(FOOTER).hide();
-  }
+  fetchData(); //get latest data from API
 }
 
 function initRun() {
+  // get button settings
+  //Default State of Buttons
+  if (window.localStorage.getItem("CC_BUTTONS") == null) {
+    let tmp = {
+      [HACKERRANK]: false,
+      [TOPCODER]: false,
+      [CODECHEF]: false,
+      [HACKEREARTH]: false,
+      [CODEFORCES]: false,
+      [ATCODER]: false,
+      [LEETCODE]: false,
+      [KICKSTART]: false,
+      [TOPH]: false,
+    };
+    window.localStorage.setItem("CC_BUTTONS", JSON.stringify(tmp));
+  }
+
+  CCBSTORAGE = JSON.parse(window.localStorage.getItem("CC_BUTTONS"));
+
   updateData();
 }
 
