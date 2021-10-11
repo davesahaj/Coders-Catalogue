@@ -81,9 +81,3 @@ function populate(N, D, T, L, S) {
 
   CONTESTLIST.innerHTML += siteinfo;
 }
-
-function buttonCheck(N, D, T, L, S) {
-  if (CFSTORAGE === "true") {
-    populate(N, D, T, L, S);
-  }
-}
