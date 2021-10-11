@@ -16,9 +16,9 @@ let HACKEREARTH = "HackerEarth";
 let CODEFORCES = "CodeForces";
 let ATCODER = "AtCoder";
 let LEETCODE = "LeetCode";
-let KICKSTART = "KickStart";
-let TOPH = "Toph";
+let KICKSTART = "Kick Start";
+let TOPH = "TopH";
 
 let ALLCONTESTS = [];
 
-let CFSTORAGE = window.localStorage.getItem("CFBUTTON");
+let CCBSTORAGE = null;
