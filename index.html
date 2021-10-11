@@ -33,7 +33,7 @@
       <div class="container-fluid user-select-none">
         <!-- Header -->
         <div class="d-flex flex-column p-1 fixed-top bg-primary" id="header">
-          <div class="d-flex flex-row fs-5">
+          <div class="d-flex flex-row fs-6">
             <span class="flex-grow-1 text-white" id="headertext"
               >Coders Catalogue</span
             >
@@ -70,15 +70,15 @@
         <!-- end contest list -->
 
         <!-- settings -->
-        <div class="row" id="settings">
+        <div class="row my-5" id="settings">
           <div class="row mb-3">
             <div class="col-10">Codeforces</div>
             <div class="col-2 form-check form-switch">
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="codeforcesBtn"
-                checked
+                name="CodeForces"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
@@ -88,7 +88,8 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="codechefBtn"
+                name="CodeChef"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
@@ -98,7 +99,8 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="hackerrankBtn"
+                name="HackerRank"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
@@ -108,7 +110,8 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="hackerearthBtn"
+                name="HackerEarth"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
@@ -118,7 +121,8 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="leetcodeBtn"
+                name="LeetCode"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
@@ -128,14 +132,20 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="topcoderBtn"
+                name="TopCoder"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">AtCoder</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="atcoderBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="AtCoder"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
           <div class="row mb-3">
@@ -144,14 +154,20 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="kickstartBtn"
+                name="Kick Start"
+                onClick="return toggleSite(this)"
               />
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-10">TopH</div>
             <div class="col-2 form-check form-switch">
-              <input type="checkbox" class="form-check-input" id="tophBtn" />
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="TopH"
+                onClick="return toggleSite(this)"
+              />
             </div>
           </div>
         </div>
@@ -159,9 +175,9 @@
 
         <!-- footer -->
         <div class="d-flex flex-column bg-primary fixed-bottom">
-          <div class="text-white p-2">
-            <i class="fa fa-copyright" aria-hidden="true"></i>
-            <span>Unemployed Devs</span>
+          <div class="text-white p-1">
+            <i class="fa fa-copyright fs-6" aria-hidden="true"></i>
+            <span class="fs-6">Unemployed Devs</span>
           </div>
         </div>
         <!-- end footer -->
@@ -190,9 +206,9 @@
 
     <!-- custom scripts -->
     <script src="res/js/var.js"></script>
-    <script src="res/js/settings.js"></script>
     <script src="res/js/timedate.js"></script>
     <script src="res/js/util.js"></script>
+    <script src="res/js/refresh.js"></script>
     <script src="res/js/populate.js"></script>
     <script src="res/js/parser.js"></script>
     <script src="res/js/init.js"></script>
