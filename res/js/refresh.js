@@ -1,3 +1,1 @@
-function refresh() {
-    
-}
+function refresh_data() {}
