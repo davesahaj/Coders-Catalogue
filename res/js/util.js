@@ -1,4 +1,3 @@
-
 $(function () {
   $("#toggle").click(function (e) {
     $(CONTESTLIST).toggle();
@@ -25,5 +24,24 @@ function overlay(v) {
     $(CONTESTLIST).hide();
     $(SETTINGS).hide();
     $(FOOTER).hide();
+  }
+}
+
+function toggleSite(site) {
+  if (site.checked) {
+    CCBSTORAGE[site.name] = true;
+  } else {
+    CCBSTORAGE[site.name] = false;
+  }
+  window.localStorage.setItem("CC_BUTTONS", JSON.stringify(CCBSTORAGE));
+}
+
+function setCheckBox() {
+  for (let site in CCBSTORAGE) {
+    if (CCBSTORAGE[site]) {
+      document.getElementsByName(site)[0].checked = true;
+    } else {
+      document.getElementsByName(site)[0].checked = false;
+    }
   }
 }
